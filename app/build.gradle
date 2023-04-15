@@ -1,0 +1,36 @@
+apply plugin: 'com.huawei.ohos.hap'
+apply plugin: 'com.huawei.ohos.decctest'
+//For instructions on signature configuration, see https://developer.harmonyos.com/en/docs/documentation/doc-guides/ide_debug_device-0000001053822404#EN-US_TOPIC_0000001154985555__section1112183053510
+ohos {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\Madalin\\DevEcoStudioProjects\\Huawei_GT2_Pro_Spotify\\debug.p12')
+            storePassword '0000001B083DDF062CBCC5533B0FDF57DE8BEDBFC66F97109BC0464DC36CDF2C6CB811DE1351315820365C'
+            keyAlias = 'debug'
+            keyPassword '0000001B7D809A49778E7445A56DFE5DD8E1067CF626484B1ECEC646F6B5EBFF67F6A33E1572676AD47753'
+            signAlg = 'SHA256withECDSA'
+            profile file('C:\\Users\\Madalin\\DevEcoStudioProjects\\Huawei_GT2_Pro_Spotify\\Huawei-GT2-SpotifyDebug.p7b')
+            certpath file('C:\\Users\\Madalin\\DevEcoStudioProjects\\Huawei_GT2_Pro_Spotify\\Huawei-GT2-Spotify-debug.cer')
+        }
+    }
+    compileSdkVersion 4
+    defaultConfig {
+        compatibleSdkVersion 3
+    }
+    buildTypes {
+        release {
+            proguardOpt {
+                proguardEnabled false
+                rulesFiles 'proguard-rules.pro'
+            }
+        }
+    }
+
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13'
+}
+decc {
+    supportType = ['html', 'xml']
+}

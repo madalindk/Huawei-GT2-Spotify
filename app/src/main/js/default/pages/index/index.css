@@ -1,0 +1,232 @@
+.stack {
+    width: 454px;
+    height: 454px;
+    justify-content: center;
+}
+.background {
+    width:454px;
+    height:454px;
+}
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    top: 0px;
+    width: 454px;
+    height: 454px;
+    background-color: transparent;
+}
+.containerFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    top: 0px;
+    width: 454px;
+    height: 454px;
+    background-color: transparent;
+}
+.title {
+    font-size: 30px;
+    text-align: center;
+    width: 10px;
+    text-overflow: ellipsis;
+    height: 60px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 454px;
+    height: 100px;
+    background-color: transparent;
+}
+.btn{
+    display: flex;
+    width: 170px;
+    height: 50px;
+}
+.btn-small{
+    display: flex;
+    width: 100px;
+    height: 50px;
+}
+.backBtn {
+    width: 200px;
+    height: 50px;
+}
+
+.songNameContainer {
+    justify-content: flex-start;
+}
+
+.songNameElement {
+    width: 300px;
+    height: 454px;
+    background-color: transparent;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.songName {
+    color: #ffffff;
+    padding-top: 65px;
+}
+
+.artistContainer {
+    justify-content: flex-start;
+}
+
+.artistElement {
+    width: 330px;
+    height: 454px;
+    background-color: transparent;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.artist {
+    text-align: center;
+    color: #C6C6C6;
+    padding-top: 110px;
+}
+
+.previousContainer {
+    align-items: flex-start;
+    padding-left: 48px;
+}
+
+.previous {
+    width: 80px;
+    height: 80px;
+}
+
+.play {
+    width: 96px;
+    height: 96px;
+}
+
+.pause {
+    width: 96px;
+    height: 96px;
+}
+
+.nextContainer {
+    align-items: flex-end;
+    padding-right: 48px;
+}
+
+.next {
+    width: 80px;
+    height: 80px;
+}
+
+.progressContainer {
+    justify-content: flex-start;
+}
+
+.progressElement {
+    width: 350px;
+    height: 454px;
+    background-color: transparent;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 305px;
+}
+
+.progressHorizontal {
+    color: #CC0000;
+    background-color: #dedede;
+    width: 350px;
+    height: 10px;
+}
+
+.currentTimeContainer {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 50px;
+}
+
+.currentTimeElement {
+    width: 454px;
+    height: 454px;
+    padding-top: 325px;
+    background-color: transparent;
+}
+
+.currentTime {
+    color: #C6C6C6;
+}
+
+.durationContainer {
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-right: 50px;
+}
+
+.durationElement {
+    width: 90px;
+    height: 454px;
+    padding-top: 325px;
+    background-color: transparent;
+}
+
+.duration {
+    color: #C6C6C6;
+}
+
+.favoriteOutlineContainer {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 140px;
+}
+
+.favoriteOutlineElement {
+    width: 454px;
+    height: 454px;
+    padding-top: 375px;
+    background-color: transparent;
+}
+
+.favoriteOutline {
+    width: 48px;
+    height: 48px;
+}
+
+.favoriteContainer {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 140px;
+}
+
+.favoriteElement {
+    width: 454px;
+    height: 454px;
+    padding-top: 375px;
+    background-color: transparent;
+}
+
+.favorite {
+    width: 48px;
+    height: 48px;
+}
+
+.speakerContainer {
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-right: 140px;
+}
+
+.speakerElement {
+    width: 48px;
+    height: 454px;
+    padding-top: 375px;
+    background-color: transparent;
+}
+
+.speaker {
+    width: 48px;
+    height: 48px;
+}

@@ -1,5 +1,10 @@
 {
   "app": {
+    "apiVersion": {
+      "compatible": 3,
+      "releaseType": "Release",
+      "target": 4
+    },
     "bundleName": "dk.madalin.huawei.gt2.spotify",
     "vendor": "Mastertrap21",
     "version": {
@@ -14,14 +19,14 @@
     ],
     "distro": {
       "deliveryWithInstall": true,
-      "moduleName": "entry",
+      "moduleName": "app",
       "moduleType": "entry"
     },
     "abilities": [
       {
         "name": "default",
         "icon": "$media:icon",
-        "label": "$string:entry_MainAbility",
+        "label": "$string:app_MainAbility",
         "type": "page"
       }
     ],

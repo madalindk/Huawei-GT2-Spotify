@@ -1,0 +1,54 @@
+<stack class="stack">
+    <div class="container songNameContainer">
+        <div class="songNameElement">
+            <text class="songName">{{ songName }}</text>
+        </div>
+    </div>
+    <div class="container artistContainer">
+        <div class="artistElement">
+            <text class="artist">{{ artist }}</text>
+        </div>
+    </div>
+    <div class="container previousContainer">
+        <image src="/common/previous.png" class="previous" onclick="prev"></image>
+    </div>
+    <div class="container playContainer" style="display: {{playDisplay}};">
+        <image src="/common/play.png" class="play" onclick="play"></image>
+    </div>
+    <div class="container pauseContainer" style="display: {{pauseDisplay}};">
+        <image src="/common/pause.png" class="pause" onclick="pause"></image>
+    </div>
+    <div class="container nextContainer">
+        <image src="/common/next.png" class="next" onclick="next"></image>
+    </div>
+    <div class="container progressContainer">
+        <div class="progressElement">
+            <progress class="progressHorizontal" type="horizontal" percent="{{progressNumber}}"></progress>
+        </div>
+    </div>
+    <div class="container favoriteOutlineContainer" style="display: {{favoriteOutlineDisplay}};">
+        <div class="favoriteOutlineElement">
+            <image src="/common/favorite-outline.png" class="favoriteOutline" onclick="setFavorite"></image>
+        </div>
+    </div>
+    <div class="container currentTimeContainer">
+        <div class="currentTimeElement">
+            <text class="currentTime">{{ new Date(currentSecond * 1000).toISOString().substring(14, 19) }}</text>
+        </div>
+    </div>
+    <div class="container durationContainer">
+        <div class="durationElement">
+            <text class="duration">{{ new Date(duration * 1000).toISOString().substring(14, 19) }}</text>
+        </div>
+    </div>
+    <div class="container favoriteContainer" style="display: {{favoriteDisplay}};">
+        <div class="favoriteElement">
+            <image src="/common/favorite.png" class="favorite" onclick="unsetFavorite"></image>
+        </div>
+    </div>
+    <div class="container speakerContainer">
+        <div class="speakerElement">
+            <image src="/common/speaker.png" class="speaker"></image>
+        </div>
+    </div>
+</stack>
